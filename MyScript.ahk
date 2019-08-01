@@ -1,4 +1,5 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+﻿
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
@@ -20,14 +21,30 @@ return
 send +{F10}
 return
 
-^k::
+^+7::
 send {F7}
 return
 
-^l::
+^+8::
 send {F8}
 return
 
-^h::
+^+6::
 send {F6}
+return
+
+^+2::
+send {F2}
+return
+
+^+e::
+send {End}
+return
+
+^+h::
+send {Home}
+return
+
+; kill scroll Rock
+ScrollLock::
 return
