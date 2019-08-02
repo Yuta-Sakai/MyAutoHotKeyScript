@@ -33,6 +33,10 @@ return
 send {F6}
 return
 
+^+5::
+send {F5}
+return
+
 ^+2::
 send {F2}
 return
