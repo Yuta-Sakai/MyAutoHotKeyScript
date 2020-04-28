@@ -17,8 +17,56 @@ RWin::
 send {vkF3sc029}
 return
 
-^+R::
-send +{F10}
+^p::
+send {Up}
+return
+
+^n::
+send {Down}
+return
+
+^m::
+send {Right}
+return
+
+^b::
+send {Left}
+return
+
+^h::
+send {BackSpace}
+return
+
+^d::
+send {Delete}
+return
+
+;^+e::
+;send {End}
+;eturn
+
+#d::
+send {End}
+return
+
+;^+a::
+;send {Home}
+;return
+
+#a::
+send {Home}
+return
+
+#p::
+send {PgUp}
+return
+
+#n::
+send {PgDn}
+return
+
+^+R::send
++{F10}
 return
 
 ^+7::
@@ -33,22 +81,11 @@ return
 send {F6}
 return
 
-^+5::
-send {F5}
-return
-
 ^+2::
 send {F2}
 return
 
-^+e::
-send {End}
-return
-
-^+h::
-send {Home}
-return
 
 ; kill scroll Rock
 ScrollLock::
-return
+
